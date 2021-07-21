@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activ_plati"
+    android:background="@color/GrayLight"
+    tools:context=".PlatiActivity"
+   >
+
+        <LinearLayout
+            android:id="@+id/plati"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvPlati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccentDark2"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/plati"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+            
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"></Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/efectueaza_plata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                style="@style/ButtonStyle"
+                android:text="@string/efectueaza_o_plata"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/Grafic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                style="@style/ButtonStyle"
+                android:background="@drawable/buttom_rounded"
+                android:text="@string/raportare"
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+        </LinearLayout>
+            <ListView
+                android:id="@+id/listViewPlati"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:clipToPadding="false"
+
+        app:itemBackground="@color/colorAccentDark2"
+        app:itemTextColor="@color/colorAccentLight"
+        app:menu="@menu/buttom" />
+
+</LinearLayout>
+
+
